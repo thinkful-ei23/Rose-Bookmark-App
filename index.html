@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- Normalize.css, a cross-browser reset file -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.css" rel="stylesheet">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+
+  <!-- Stylesheets -->
+  
+  <link rel="stylesheet" href="main.css" />
+  
+  <title>Bookmark App</title>
+</head>
+<body>
+    <h1>My Bookmarks</h1>
+    <button type="button" class="js-add-bookmark-button">Add Bookmark</button>
+    <form name="add-bookmark-form" id="js-add-bookmark-form"> 
+      <div class="error"></div>
+      <div>
+        <label for="add-bookmark-title">Add bookmark title</label>
+        <input type="text" name="add-bookmark-title" class="js-bookmark-list-entry">
+      </div>   
+      <div>
+        <label for="add-bookmark-url">Add bookmark link</label>
+        <input type="text" name="add-bookmark-url" class="js-bookmark-url">
+      </div>
+      <div>
+        <label for="add-bookmark-description">Add bookmark description</label>
+        <input type="text" name="add-bookmark-description" class="js-bookmark-description">
+      </div>
+      <div>
+          <label for="add-bookmark-rating">Add bookmark rating</label>
+          <input type="text" name="add-bookmark-rating" class="js-bookmark-rating">
+      </div>
+      
+      <button type="submit" class="submit-button">Submit</button> 
+    </form>  
+   <div class="rating" > Rating: 
+    <select>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      </select>
+    </div>
+
+    <ul id="js-bookmark-list"></ul>
+    
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="config.js"></script>
+    <script type="text/javascript" src="store.js"></script>
+    <script type="text/javascript" src="api.js"></script>
+    <script type="text/javascript" src="bookmark.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+</body>
+</html>
