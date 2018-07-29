@@ -14,34 +14,50 @@
   <!-- Stylesheets -->
   
   <link rel="stylesheet" href="main.css" />
+  <link rel="stylesheet" href="float-grid.css" />
   
   <title>Bookmark App</title>
 </head>
 <body>
-    <h1>My Bookmarks</h1>
-    <button type="button" class="js-add-bookmark-button">Add Bookmark</button>
-    <form name="add-bookmark-form" id="js-add-bookmark-form"> 
-      <div class="error"></div>
-      <div>
-        <label for="add-bookmark-title">Add bookmark title</label>
-        <input type="text" name="add-bookmark-title" class="js-bookmark-list-entry">
-      </div>   
-      <div>
-        <label for="add-bookmark-url">Add bookmark link</label>
-        <input type="text" name="add-bookmark-url" class="js-bookmark-url">
+  <header>
+    <div class="row"> 
+      <div class="col-12">
+        <h1>My Bookmarks</h1>
       </div>
-      <div>
-        <label for="add-bookmark-description">Add bookmark description</label>
-        <input type="text" name="add-bookmark-description" class="js-bookmark-description">
+    </div>
+  </header>
+  <div>
+      <button type="button" class="js-add-bookmark-button">Add Bookmark</button>
+  </div>  
+  
+  <div class="row">
+    <div class="col-4"> 
+      <div class="add-bookmark-form"> 
+        <form name="add-bookmark-form" id="js-add-bookmark-form"> 
+          <div class="error"></div>
+            <div>    
+              <label for="add-bookmark-title">Add bookmark title</label>
+              <input type="text" name="add-bookmark-title" class="js-bookmark-title">
+            </div>   
+            <div> 
+              <label for="add-bookmark-url">Add bookmark link</label>
+              <input type="text" name="add-bookmark-url" class="js-bookmark-url">
+            </div>
+            <div>
+              <label for="add-bookmark-description">Add bookmark description</label>
+              <input type="text" name="add-bookmark-description" class="js-bookmark-description">
+            </div>
+            <div>
+              <label for="add-bookmark-rating">Add bookmark rating</label>
+              <input type="text" name="add-bookmark-rating" class="js-bookmark-rating">
+            </div>     
+            <button type="submit" class="submit-button">Submit</button> 
+        </form>  
       </div>
-      <div>
-          <label for="add-bookmark-rating">Add bookmark rating</label>
-          <input type="text" name="add-bookmark-rating" class="js-bookmark-rating">
-      </div>
-      
-      <button type="submit" class="submit-button">Submit</button> 
-    </form>  
-   <div class="rating" > Rating: 
+    </div> 
+  </div> 
+
+   <div class="rating" > Search by Rating: 
     <select>
         <option value="1">1</option>
         <option value="2">2</option>
@@ -60,6 +76,5 @@
     <script type="text/javascript" src="api.js"></script>
     <script type="text/javascript" src="bookmark.js"></script>
     <script type="text/javascript" src="index.js"></script>
-    <script type="text/javascript" src="main.js"></script>
 </body>
 </html>

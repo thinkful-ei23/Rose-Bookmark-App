@@ -72,13 +72,13 @@ const bookmark = (function(){
   function handleNewItemSubmit() {
     $('#js-add-bookmark-form').submit(function (event) {
       event.preventDefault();
-      const newItemTitle = $('.js-bookmark-list-entry').val();
+      const newItemTitle = $('.js-bookmark-title').val();
       const newItemLink = $('.js-bookmark-url').val();
       const newItemDescription = $('.js-bookmark-description').val();
       const newItemRating = $('.js-bookmark-rating').val();
       
       //refactor
-      $('.js-bookmark-list-entry').val('');
+      $('.js-bookmark-title').val('');
       $('.js-bookmark-url').val('');
       $('.js-bookmark-description').val('');
       $('.js-bookmark-rating').val('');
