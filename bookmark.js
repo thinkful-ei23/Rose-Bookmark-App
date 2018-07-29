@@ -13,7 +13,6 @@ const bookmark = (function(){
       ${item.desc}
       ${item.rating}
       <a href="${item.url}">Visit Site</a>
-      
       <button type="button" class="js-expanded-button"> - </button>
       <button type="button" class="js-delete-bookmark"> Delete Bookmark </button>
     </li> 
@@ -143,7 +142,6 @@ const bookmark = (function(){
     render,
     bindEventListeners, 
     handleSearchRating,
-    //handleDeleteBookmark,
   };
 
 }());   

@@ -23,7 +23,6 @@ const api = (function() {
   };
 
   const deleteBookmark = function(id, success) {
-    console.log('delete function running');
     $.ajax({
       contentType: 'application/json',
       url: `${BASE_URL}/bookmarks/${id}`,
