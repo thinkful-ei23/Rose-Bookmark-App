@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <title>Bookmark App</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -16,7 +17,7 @@
   <link rel="stylesheet" href="main.css" />
   <link rel="stylesheet" href="float-grid.css" />
   
-  <title>Bookmark App</title>
+  
 </head>
 <body>
   <header>
@@ -30,8 +31,7 @@
       <button type="button" class="js-add-bookmark-button">Add Bookmark</button>
   </div>  
   
-  <div class="row">
-    <div class="col-4"> 
+    <fieldset>
       <div class="add-bookmark-form"> 
         <form name="add-bookmark-form" id="js-add-bookmark-form"> 
           <div class="error"></div>
@@ -54,10 +54,10 @@
             <button type="submit" class="submit-button">Submit</button> 
         </form>  
       </div>
-    </div> 
-  </div> 
+    </fieldset>
 
-   <div class="rating" > Search by Rating: 
+   <div>
+    <label for="search-by-rating" class="rating"> Search by Rating:</label> 
     <select>
         <option value="1">1</option>
         <option value="2">2</option>
